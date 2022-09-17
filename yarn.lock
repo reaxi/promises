@@ -789,7 +789,7 @@ __metadata:
   dependencies:
     "@rollup/plugin-commonjs": ^21.0.1
     "@rollup/plugin-node-resolve": ^13.0.4
-    "@rollup/plugin-typescript": ^8.2.5
+    "@rollup/plugin-typescript": ^8.5.0
     "@swc/core": ^1.2.145
     "@swc/jest": ^0.2.20
     "@types/jest": ^27.0.1
@@ -857,9 +857,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/plugin-typescript@npm:^8.2.5":
-  version: 8.3.1
-  resolution: "@rollup/plugin-typescript@npm:8.3.1"
+"@rollup/plugin-typescript@npm:^8.5.0":
+  version: 8.5.0
+  resolution: "@rollup/plugin-typescript@npm:8.5.0"
   dependencies:
     "@rollup/pluginutils": ^3.1.0
     resolve: ^1.17.0
@@ -867,7 +867,10 @@ __metadata:
     rollup: ^2.14.0
     tslib: "*"
     typescript: ">=3.7.0"
-  checksum: d2672dfdab629c68d535d6e858cb972762238cdad01693854da3d125ca0cd03aa44f9cb8a5eff89e9785053aa29b58fb4026870005600f9188e9ad944a4a868e
+  peerDependenciesMeta:
+    tslib:
+      optional: true
+  checksum: 2f100a73cdeb9bf82feaf8665fe791dabf5dcc17f6e727eb7b1825e7c7cf815ccd3f79f9f43ca53d7806c50686565c71f35fffcfc773b811a5c1e39eab167529
   languageName: node
   linkType: hard
 
