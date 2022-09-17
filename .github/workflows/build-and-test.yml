@@ -18,8 +18,8 @@ jobs:
       - name: Run tests
         run: yarn test
 
-      - name: verify folders
-        run: yarn exec ls -d */
+      - name: verify process.cwd()
+        run: yarn exec node -e "console.log(process.cwd())"
 
       - name: Build Package
         run: yarn pack
