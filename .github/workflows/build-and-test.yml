@@ -18,5 +18,8 @@ jobs:
       - name: Run tests
         run: yarn test
 
+      - name: verify folders
+        run: yarn exec ls -d */
+
       - name: Build Package
         run: yarn pack
