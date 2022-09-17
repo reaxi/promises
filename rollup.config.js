@@ -7,7 +7,7 @@ import del from 'rollup-plugin-delete';
 import command from 'rollup-plugin-command';
 
 const plugins = [
-    typescript({ tsconfig: './tsconfig.json', filterRoot: false }),
+    typescript({ tsconfig: './tsconfig.json' }),
     commonjs(),
     nodeResolve(),
     command('yarn minify'), // <- if you want to minify code (with terser)
