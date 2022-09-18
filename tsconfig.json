@@ -11,8 +11,8 @@
         "allowJs": true /* Allow javascript files to be compiled. */,
         // "checkJs": true,                             /* Report errors in .js files. */
         // "jsx": "preserve",                           /* Specify JSX code generation: 'preserve', 'react-native', 'react', 'react-jsx' or 'react-jsxdev'. */
-        "declaration": true /* Generates corresponding '.d.ts' file. */,
-        "declarationDir": "./.declaration",
+        //"declaration": true /* Generates corresponding '.d.ts' file. */,
+        //"declarationDir": "./dist/_declaration/src/",
         // "declarationMap": true,                      /* Generates a sourcemap for each corresponding '.d.ts' file. */
         // "sourceMap": true,                           /* Generates corresponding '.map' file. */
         //"outFile": "./dist/index.js",                             /* Concatenate and emit output to single file. */
@@ -68,6 +68,6 @@
         "skipLibCheck": true /* Skip type checking of declaration files. */,
         "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
     },
-    "include": ["src/**/*", "tests/**/*"],
+    "include": ["src/**/*"],
     "exclude": ["node_modules", "dist"]
 }
