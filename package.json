@@ -18,7 +18,6 @@
     ],
     "license": "MIT",
     "scripts": {
-        "prepublishOnly": "yarn build",
         "build": "rollup --config rollup.config.js",
         "build:quick": "sucrase ./src -d ./dist --transforms typescript,imports",
         "minify": "terser dist/index.js --compress ecma=2015,computed_props=false -o dist/index.js --comments false",
@@ -31,13 +30,13 @@
         "lint": "eslint --cache --fix",
         "format": "prettier --write",
         "postinstall": "husky install",
-        "prepack": "yarn run build --inspect && pinst --disable",
+        "prepack": "yarn run build && pinst --disable",
         "postpack": "pinst --enable"
     },
     "devDependencies": {
         "@rollup/plugin-commonjs": "^21.0.1",
         "@rollup/plugin-node-resolve": "^13.0.4",
-        "@rollup/plugin-typescript": "^8.2.5",
+        "@rollup/plugin-typescript": "^8.5.0",
         "@swc/core": "^1.2.145",
         "@swc/jest": "^0.2.20",
         "@types/jest": "^27.0.1",
@@ -67,8 +66,8 @@
         "sucrase": "^3.20.1",
         "terser": "^5.12.1",
         "ts-jest": "^27.0.4",
-        "tslib": "^2.3.1",
-        "typescript": "^4.3.5"
+        "tslib": "^2.4.0",
+        "typescript": "^4.8.3"
     },
     "lint-staged": {
         "*.{js,ts}": "npm run lint",
