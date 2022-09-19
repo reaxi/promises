@@ -8,7 +8,6 @@ on:
     types: [created]
 
 jobs:
-
   publish-npm:
     runs-on: ubuntu-latest
     steps:
@@ -18,6 +17,6 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: yarn install
-      - run: yarn npm publish --access public
+      - run: yarn npm publish --access public --otp ${{secrets.npm_token}}
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
